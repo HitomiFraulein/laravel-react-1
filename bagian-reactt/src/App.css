@@ -1,0 +1,110 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.navbar-wrapper a{
+  padding-left: 30px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.KartuP {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-content: center;
+  margin-top: 50px;
+
+}
+
+.KartuP .kartuu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  height: 100%;
+
+}
+
+.KartuP .kartuu .konten {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.KartuP .kartuu .konten .gmbr{
+  display: flex;
+  align-items: center;
+  height: auto;
+  width: 300px;
+}
+.KartuP .kartuu .konten .deskripsi{
+  margin: 12px;
+  height: 150px;
+  overflow: auto;
+}
+.KartuP .kartuu .konten .harga {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.KartuP .kartuu .konten .actioon {
+  display: flex;
+  justify-content: space-around;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 12px;
+}
+.deskripsi::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.deskripsi::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+.deskripsi::-webkit-scrollbar-thumb
+{
+	background-color: #4e95ff;
+}
+.serbar{
+  margin: 0 50px ;
+}
